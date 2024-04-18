@@ -1,4 +1,11 @@
-const helloWorldRegex = (str) => {};
+const helloWorldRegex = (str) => {
+  let pattern = /hello\s+world/i;
+  return pattern.test(str);
+};
+// console.log(helloWorldRegex("I am god"));
+// console.log(helloWorldRegex("hello world"));
+// console.log(helloWorldRegex("hello world, my old friend"));
+
 
 const hasAVowel = (str) => {};
 
