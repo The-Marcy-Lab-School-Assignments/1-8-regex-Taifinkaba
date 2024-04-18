@@ -16,7 +16,9 @@ const hasAVowel = (str) => {
 // console.log(hasAVowel("zzzzzzkkkww"));
 
 
-const hasCatsOrDogs = (str) => {};
+const hasCatsOrDogs = (str) => {
+  // let pet = //gi;
+};
 
 const hasVowelStart = (str) => {};
 
