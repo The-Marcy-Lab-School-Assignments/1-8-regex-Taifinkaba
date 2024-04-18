@@ -31,7 +31,10 @@ const hasPunctuationEnd = (str) => {
   return punc.test(str);
 };
 
-const hasNothingOrDigits = (str) => {};
+const hasNothingOrDigits = (str) => {
+  let digit = /^$|^\d+$/gi;
+  return digit.test(str);
+};
 
 const hasNoFlippers = (str) => {};
 
