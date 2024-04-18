@@ -17,7 +17,8 @@ const hasAVowel = (str) => {
 
 
 const hasCatsOrDogs = (str) => {
-  // let pet = //gi;
+  let pet = /cats|dogs/gi;
+  return pet.test(str);
 };
 
 const hasVowelStart = (str) => {};
