@@ -24,11 +24,6 @@ const hasCatsOrDogs = (str) => {
 const hasVowelStart = (str) => {
   let vowel = /^a|^e|^i|^o|^u/gi;
   return vowel.test(str);
-  // if(vowel === str[0]){
-  //   return true;
-  // }else{
-  //   return false;
-  // }
 };
 
 const hasPunctuationEnd = (str) => {};
