@@ -26,7 +26,10 @@ const hasVowelStart = (str) => {
   return vowel.test(str);
 };
 
-const hasPunctuationEnd = (str) => {};
+const hasPunctuationEnd = (str) => {
+  let punc = /[.!?]$/gi;
+  return punc.test(str);
+};
 
 const hasNothingOrDigits = (str) => {};
 
