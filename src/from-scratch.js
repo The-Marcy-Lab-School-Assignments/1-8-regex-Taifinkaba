@@ -36,7 +36,10 @@ const hasNothingOrDigits = (str) => {
   return digit.test(str);
 };
 
-const hasNoFlippers = (str) => {};
+const hasNoFlippers = (str) => {
+  let flips = /^[^BCcDEHIKOoXxl]*$/;
+  return flips.test(str);
+};
 
 const isValidEmail = (str) => {};
 
