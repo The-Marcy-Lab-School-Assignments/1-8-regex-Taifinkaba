@@ -6,8 +6,15 @@ const helloWorldRegex = (str) => {
 // console.log(helloWorldRegex("hello world"));
 // console.log(helloWorldRegex("hello world, my old friend"));
 
+const hasAVowel = (str) => {
+  let vowels = /[aeiou]/gi;
+  return vowels.test(str);
+};
+// console.log(hasAVowel("I am god"));
+// console.log(hasAVowel("hello world"));
+// console.log(hasAVowel("hello world, my old friend"));
+// console.log(hasAVowel("zzzzzzkkkww"));
 
-const hasAVowel = (str) => {};
 
 const hasCatsOrDogs = (str) => {};
 
