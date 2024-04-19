@@ -41,9 +41,15 @@ const hasNoFlippers = (str) => {
   return flips.test(str);
 };
 
-const isValidEmail = (str) => {};
+const isValidEmail = (str) => {
+  let email = /^[\w.]+@[\w]+\.[\w]{2,4}/;
+  return email.test(str);
+}
 
-const isValidPhoneNumber = (str) => {};
+const isValidPhoneNumber = (str) => {
+  let phone = /^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]\d{3}[\s.-]\d{4}$/;
+  return phone.test(str);
+};
 
 const matchAllNumbers = (str) => {};
 
