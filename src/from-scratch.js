@@ -51,11 +51,22 @@ const isValidPhoneNumber = (str) => {
   return phone.test(str);
 };
 
-const matchAllNumbers = (str) => {};
+const matchAllNumbers = (str) => {
+  if(str.match(/\d+/g)) return str.match(/\d+/g);
+  return [];
+};
 
-const matchAllNumbersAsNumbers = (str) => {};
+const matchAllNumbersAsNumbers = (str) => {
+  let str2 = str.match(/\d+/g);
+  if (str2) return str2.map(Number);
+  return [];
+};
 
-const matchAllWords = (str) => {};
+const matchAllWords = (str) => {
+  let word = /[a-zA-Z']+/g;
+  if(str.match(word)) return str.match(word);
+  return [];
+};
 
 const replaceAllNumbers = (str) => {};
 
