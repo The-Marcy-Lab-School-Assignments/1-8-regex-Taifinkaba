@@ -77,10 +77,12 @@ const fixFileName = (str) => {
 };
 
 const nameRedacter = (str) => {
-  return str.replace(/\b(?!(?:I|A)\b)[A-Z]+\b/g, 'REDACTED');
+  return str.replace(/[A-Z]{2,}/g, 'REDACTED');
 };
 
-const camelToSnakeCase = (str) => {};
+const camelToSnakeCase = (str) => {
+  return str.replace(/[A-Z]/g, '_$&').toLowerCase();
+};
 
 module.exports = {
   helloWorldRegex,
