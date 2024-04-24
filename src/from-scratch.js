@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job getting all test cases to pass! */
 const helloWorldRegex = (str) => {
   let pattern = /hello\s+world/i;
   return pattern.test(str);
